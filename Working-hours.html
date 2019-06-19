@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Working Hours</title>
+    <link rel="stylesheet" href="/dist/css/style.min.css" />
+    <script src="https://kit.fontawesome.com/1e48d616a3.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar bg-dark">
+      <h1 class="outingzm lead"><a href="index.html">OutingZM</a></h1>
+      <ul>
+        <li>
+          <a href="dashboard.html">
+            <i class="fas fa-id-card"></i>
+            <span class="hide-sm"> Dashboard</span>
+          </a>
+        </li>
+        <li><a class="mini" href="promos.html">Promos</a></li>
+        <li>
+          <a href="login.html">
+            <i class="fas fa-sign-out-alt"></i>
+            <span class="hide-sm"> Logout</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="container">
+      <h1 class="large text-primary">
+        Add Working hours
+      </h1>
+      <p class="lead">
+        What time of the day is your business open.
+      </p>
+      <small>* = required field</small>
+      <form class="form" enctype="multipart/form-data">
+        <div class="form-group working-hours">
+          <label class="day" for="sunday">Sunday: </label>
+          <input type="text" placeholder="00:00 - 23:59" name="sunday" />
+        </div>
+        <div class="form-group working-hours">
+          <label class="day" for="sunday">Monday: </label>
+          <input type="text" placeholder="00:00 - 23:59" name="monday" />
+        </div>
+        <div class="form-group working-hours">
+          <label class="day" for="sunday">Tuesday: </label>
+          <input type="text" placeholder="00:00 - 23:59" name="tuesday" />
+        </div>
+        <div class="form-group working-hours">
+          <label class="day" for="sunday">Wednesday: </label>
+          <input type="text" placeholder="00:00 - 23:59" name="wednesday" />
+        </div>
+        <div class="form-group working-hours">
+          <label class="day" for="sunday">Thursday: </label>
+          <input type="text" placeholder="00:00 - 23:59" name="thursday" />
+        </div>
+        <div class="form-group working-hours">
+          <label class="day" for="sunday">Friday: </label>
+          <input type="text" placeholder="00:00 - 23:59" name="friday" />
+        </div>
+        <div class="form-group working-hours">
+          <label class="day" for="sunday">Saturday: </label>
+          <input type="text" placeholder="00:00 - 23:59" name="sarturday" />
+        </div>
+
+        <input type="submit" class="btn btn-primary my-1" />
+        <a class="btn my-1" href="dashboard.html">Go Back</a>
+      </form>
+    </section>
+
+    <footer class="footer bg-dark">
+      <ul class="footer-items">
+        <li><a class="mini" href="about.html">About</a></li>
+        <li><a class="mini" href="contact.html">Contact</a></li>
+        <li><a class="mini" href="privacy.html">Privacy</a></li>
+        <li><a class="mini" href="advertising.html">Advertising</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>

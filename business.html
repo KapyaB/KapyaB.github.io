@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Business Profile</title>
+    <link rel="stylesheet" href="/dist/css/style.min.css" />
+    <script src="https://kit.fontawesome.com/1e48d616a3.js"></script>
+    <script src="/dist/js/main.js" type="text/javascript"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar bg-dark">
+      <h1 class="outingzm lead"><a href="index.html">OutingZM</a></h1>
+      <ul>
+        <li>
+          <a href="dashboard.html">
+            <i class="fas fa-id-card"></i>
+            <span class="hide-sm"> Dashboard</span>
+          </a>
+        </li>
+        <li><a class="mini" href="register.html">Register</a></li>
+        <li><a class="mini" href="login.html">Login</a></li>
+      </ul>
+    </nav>
+
+    <section class="business-profile">
+      <div class="business-grid my-1">
+        <!-- Top -->
+        <div class="business-top bg-light p-2">
+          <img
+            src="/dist/images/covers/cover2.jpg"
+            alt="Profile image"
+            class="cover"
+          />
+
+          <h1 class="large">Rocky Mountains Lodge</h1>
+
+          <div class="icons my-1">
+            <a href="">
+              <i class="fas fa-map-marked-alt fa-2x"></i>
+            </a>
+            <a href="">
+              <i class="fas fa-globe fa-2x"></i>
+            </a>
+            <a href="">
+              <i class="fab fa-facebook fa-2x"></i>
+            </a>
+            <a href="">
+              <i class="fab fa-twitter fa-2x"></i>
+            </a>
+            <a href="">
+              <i class="fab fa-instagram fa-2x"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Gallery -->
+        <h3 class="lead Showcase">Our Photo Gallery</h3>
+        <!-- Showcase image 1 -->
+        <div class="showcase bg-white">
+          <!-- <div class="showcase-img"> -->
+          <img
+            class="showcase-image"
+            id="img_1"
+            src="/dist/images/showcase/meeting.jpg"
+            alt="product image"
+            onclick="enlarge(id='img_1')"
+          />
+          <!-- </div> -->
+          <!-- <div class="showcase-img"> -->
+          <img
+            class="showcase-image"
+            id="img_2"
+            src="/dist/images/showcase/coffee.jpg"
+            alt="product image"
+            onclick="enlarge(id='img_2')"
+          />
+          <!-- </div> -->
+          <!-- <div class="showcase-img"> -->
+          <img
+            class="showcase-image"
+            id="img_3"
+            src="/dist/images/showcase/tables.jpg"
+            alt="product image"
+            onclick="enlarge(id='img_3')"
+          />
+          <!-- </div> -->
+          <!-- <div class="showcase-img"> -->
+          <img
+            class="showcase-image"
+            id="img_4"
+            src="/dist/images/showcase/hallway.jpg"
+            alt="product image"
+            onclick="enlarge(id='img_4')"
+          />
+          <!-- </div> -->
+          <!-- <div class="showcase-img"> -->
+          <img
+            class="showcase-image"
+            id="img_2"
+            src="/dist/images/showcase/coffee.jpg"
+            alt="product image"
+            onclick="enlarge(id='img_2')"
+          />
+          <!-- </div> -->
+          <!-- <div class="showcase-img"> -->
+          <img
+            class="showcase-image"
+            id="img_3"
+            src="/dist/images/showcase/tables.jpg"
+            alt="product image"
+            onclick="enlarge(id='img_3')"
+          />
+          <!-- </div> -->
+          <!-- <div class="showcase-img"> -->
+          <img
+            class="showcase-image"
+            id="img_4"
+            src="/dist/images/showcase/hallway.jpg"
+            alt="product image"
+            onclick="enlarge(id='img_4')"
+          />
+          <!-- </div> -->
+        </div>
+
+        <!-- About -->
+        <div class="business-about bg-light p-2">
+          <h2 class="text-primary">Who are we?</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero,
+            odit. Explicabo reiciendis veniam quia necessitatibus expedita totam
+            corporis voluptas suscipit?
+          </p>
+
+          <div class="line"></div>
+          <h2 class="text-primary">Services we offer</h2>
+          <div class="services">
+            <div class="p-1">
+              <i class="far fa-check-circle"></i> Mountain climbing
+            </div>
+            <div class="p-1">
+              <i class="far fa-check-circle"></i> Boat Cruise
+            </div>
+            <div class="p-1">
+              <i class="far fa-check-circle"></i> Event Hosting
+            </div>
+            <div class="p-1">
+              <i class="far fa-check-circle"></i> Conference Hall
+            </div>
+          </div>
+        </div>
+
+        <h3 class="lead products">Our Products</h3>
+        <!-- product -->
+        <div class="product bg-light">
+          <div class="product-img">
+            <img
+              class="product-image"
+              src="/dist/images/products/prod1.jpg"
+              alt="product image"
+            />
+          </div>
+          <div class="product-details">
+            <p class="product-title lead">
+              Boat Cruise
+            </p>
+            <p class="product-text mini">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Laboriosam adipisci quod dolorum laborum cumque quia?
+            </p>
+            <p class="mini product-price">K 1,500</p>
+          </div>
+        </div>
+
+        <button
+          id="modal-btn"
+          class="btn btn-primary"
+          onclick="revealProducts()"
+        >
+          See More
+        </button>
+
+        <!-- Reviews -->
+        <div class="business-reviews bg-white p-2">
+          <h2 class="text-primary">Reviews</h2>
+          <div class="line"></div>
+          <div class="review-container">
+            <div class="star-rating">
+              <h4>Average rating</h4>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <p class="mini">From <strong>203</strong> Customers</p>
+              </div>
+            </div>
+            <a href="reviews.html">
+              <button class="btn btn-primary">Read Reviews</button>
+            </a>
+          </div>
+        </div>
+        <div class="review-form my-1">
+          <h2 class="text-primary">Leave a Review</h2>
+          <form class="form my-1">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="line"></div>
+            <textarea
+              name="text"
+              cols="30"
+              rows="5"
+              placeholder="What do you think about our services?"
+            ></textarea>
+            <input type="submit" class="btn btn-primary my-1" value="Submit" />
+          </form>
+        </div>
+
+        <!-- contact -->
+        <div class="business-contact bg-white p-2">
+          <h2 class="text-primary">Contact</h2>
+          <div>
+            <p><strong>phone: </strong>+260 971 234 567</p>
+            <p><strong>email: </strong>contact@rockymts.com</p>
+            <p><strong>address: </strong>1 Kafue road, Siavonga</p>
+          </div>
+        </div>
+        <a href="businesses.html" class="btn btn-light my-1">All Businesses</a>
+      </div>
+    </section>
+    <!-- products modal -->
+    <div class="modal" id="productModal">
+      <button onclick="closeModal()" class="close btn btn-danger">Close</button>
+      <script>
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          var modal = document.getElementById("productModal");
+          var mainSection = document.getElementsByClassName(
+            "business-profile"
+          )[0];
+          if (event.target == modal) {
+            modal.style.display = "none";
+            mainSection.style.opacity = 1;
+          }
+        };
+      </script>
+      <div class="product bg-white">
+        <div class="product-img">
+          <img
+            class="product-image"
+            src="/dist/images/products/prod1.jpg"
+            alt="product image"
+          />
+        </div>
+        <div class="product-details">
+          <p class="product-title lead">
+            Boat Cruise
+          </p>
+          <p class="product-text mini">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam
+            adipisci quod dolorum laborum cumque quia?
+          </p>
+          <p class="mini product-price">K 1,500</p>
+        </div>
+      </div>
+      <div class="product bg-white">
+        <div class="product-img">
+          <img
+            class="product-image"
+            src="/dist/images/products/prod1.jpg"
+            alt="product image"
+          />
+        </div>
+        <div class="product-details">
+          <p class="product-title lead">
+            Boat Cruise
+          </p>
+          <p class="product-text mini">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam
+            adipisci quod dolorum laborum cumque quia?
+          </p>
+          <p class="mini product-price">K 1,500</p>
+        </div>
+      </div>
+      <div class="product bg-white">
+        <div class="product-img">
+          <img
+            class="product-image"
+            src="/dist/images/products/prod1.jpg"
+            alt="product image"
+          />
+        </div>
+        <div class="product-details">
+          <p class="product-title lead">
+            Boat Cruise
+          </p>
+          <p class="product-text mini">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam
+            adipisci quod dolorum laborum cumque quia?
+          </p>
+          <p class="mini product-price">K 1,500</p>
+        </div>
+      </div>
+      <div class="product bg-white">
+        <div class="product-img">
+          <img
+            class="product-image"
+            src="/dist/images/products/prod1.jpg"
+            alt="product image"
+          />
+        </div>
+        <div class="product-details">
+          <p class="product-title lead">
+            Boat Cruise
+          </p>
+          <p class="product-text mini">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam
+            adipisci quod dolorum laborum cumque quia?
+          </p>
+          <p class="mini product-price">K 1,500</p>
+        </div>
+      </div>
+      <div class="product bg-white">
+        <div class="product-img">
+          <img
+            class="product-image"
+            src="/dist/images/products/prod1.jpg"
+            alt="product image"
+          />
+        </div>
+        <div class="product-details">
+          <p class="product-title lead">
+            Boat Cruise
+          </p>
+          <p class="product-text mini">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam
+            adipisci quod dolorum laborum cumque quia?
+          </p>
+          <p class="mini product-price">K 1,500</p>
+        </div>
+      </div>
+      <div class="product bg-white">
+        <div class="product-img">
+          <img
+            class="product-image"
+            src="/dist/images/products/prod1.jpg"
+            alt="product image"
+          />
+        </div>
+        <div class="product-details">
+          <p class="product-title lead">
+            Boat Cruise
+          </p>
+          <p class="product-text mini">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam
+            adipisci quod dolorum laborum cumque quia?
+          </p>
+          <p class="mini product-price">K 1,500</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

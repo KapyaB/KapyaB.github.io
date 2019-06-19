@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>promo</title>
+    <link rel="stylesheet" href="/dist/css/style.min.css" />
+    <script src="https://kit.fontawesome.com/1e48d616a3.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar bg-dark">
+      <h1 class="outingzm lead"><a href="index.html">OutingZM</a></h1>
+      <ul>
+        <li>
+          <a href="dashboard.html">
+            <i class="fas fa-id-card"></i>
+            <span class="hide-sm"> Dashboard</span>
+          </a>
+        </li>
+        <li><a class="mini" href="promos.html">Promos</a></li>
+        <li>
+          <a href="login.html">
+            <i class="fas fa-sign-out-alt"></i>
+            <span class="hide-sm"> Logout</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="container">
+      <a class="btn my-1" href="dashboard.html">Go Back</a>
+      <h1 class="large text-primary">
+        Promo
+      </h1>
+      <p class="lead">
+        Promote a product or your business to reach more people.
+      </p>
+      <small>* = required field</small>
+      <form class="form" enctype="multipart/form-data">
+        <div class="form-group">
+          <small>Include an image</small>
+          <input type="file" name="image" id="prod-image" class="btn" />
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="* Name" name="name" required />
+        </div>
+        <div class="form-group">
+          <textarea
+            name="details"
+            cols="30"
+            rows="5"
+            placeholder="product details"
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            placeholder="Link to redirect visitors"
+            name="promo-url"
+            required
+          />
+        </div>
+        <div class="duration">
+          <p class="mini">Choose the duration for your promo</p>
+          <label class="duration-container bg-primary lead"
+            >One Day - K25.00
+            <input type="radio" checked="checked" name="radio" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="duration-container bg-primary lead"
+            >One Week - K150.00
+            <input type="radio" name="radio" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="duration-container bg-primary lead"
+            >One Month - K600
+            <input type="radio" name="radio" />
+            <span class="checkmark"></span>
+          </label>
+        </div>
+        <small
+          >This Promo will be included in the slideshow on the
+          <a href="promos.html">promos page</a>, the
+          <a href="index.html">front page</a>, and on the
+          <a href="businesses.html">directory page</a>. It is
+          non-refundable.</small
+        >
+        <input
+          type="submit"
+          class="btn btn-primary my-1 create-promo"
+          value="Create"
+        />
+      </form>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Create Profile</title>
+    <link rel="stylesheet" href="/dist/css/style.min.css" />
+    <script src="https://kit.fontawesome.com/1e48d616a3.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar bg-dark">
+      <h1 class="outingzm lead"><a href="index.html">OutingZM</a></h1>
+      <ul>
+        <li>
+          <a href="dashboard.html">
+            <i class="fas fa-id-card"></i>
+            <span class="hide-sm"> Dashboard</span>
+          </a>
+        </li>
+        <li><a class="mini" href="promos.html">Promos</a></li>
+        <li>
+          <a href="login.html">
+            <i class="fas fa-sign-out-alt"></i>
+            <span class="hide-sm"> Logout</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="container">
+      <h1 class="large text-primary">Create Profile</h1>
+      <p class="lead">
+        <i class="fas fa-user">
+          Let us know more about your business
+        </i>
+      </p>
+      <small>* = required fields</small>
+      <form class="form">
+        <div class="form-group">
+          <select name="category">
+            <option value="0">* Select you business category</option>
+            <option class="mini" value="hotel">Hotel</option>
+            <option class="mini" value="lodge">Lodge</option>
+            <option class="mini" value="restaurant">Restaurant</option>
+            <option class="mini" value="guest-house">Guest House</option>
+            <option class="mini" value="coffee-shop">Coffee Shop</option>
+            <option class="mini" value="take-away">Take Away</option>
+            <option class="mini" value="fast-food">Fast Food</option>
+            <option class="mini" value="other">Other</option>
+          </select>
+          <small class="form-text"
+            >Give us an idea of what type of business you run</small
+          >
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Company Name" name="company" />
+          <small class="form-text">The actual name of the Company</small>
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Phone" name="phone" />
+          <small class="form-text">Public phone number</small>
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Email" name="email" />
+          <small class="form-text">Public email address</small>
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Website" name="website" />
+          <small class="form-text">Your company's website</small>
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Reservations link" name="res-url" />
+          <small class="form-text"
+            >If you offer online Reservations/Booking</small
+          >
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="City" name="city" />
+          <small class="form-text">Capitalized city name (eg. Lusaka)</small>
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Location" name="location" />
+          <small class="form-text"
+            >Location / The street and number as appears on google maps</small
+          >
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="* Services" name="services" />
+          <small class="form-text"
+            >Please use comma separated values (eg. breakfast in bed, event
+            hosting, etc)</small
+          >
+        </div>
+        <div class="form-group">
+          <textarea
+            placeholder="A short intro of your business"
+            name="intro"
+          ></textarea>
+          <small class="form-text">Tell us a little about your business</small>
+        </div>
+
+        <div class="form-group social-input">
+          <i class="fab fa-twitter fa-2x"></i>
+          <input type="text" placeholder="Twitter URL" name="twitter" />
+        </div>
+
+        <div class="form-group social-input">
+          <i class="fab fa-facebook fa-2x"></i>
+          <input type="text" placeholder="Facebook URL" name="facebook" />
+        </div>
+
+        <div class="form-group social-input">
+          <i class="fab fa-instagram fa-2x"></i>
+          <input type="text" placeholder="Instagram URL" name="instagram" />
+        </div>
+        <input type="submit" class="btn btn-primary my-1" />
+        <a class="btn my-1" href="dashboard.html">Go Back</a>
+      </form>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/dist/css/style.min.css" />
+    <script src="https://kit.fontawesome.com/1e48d616a3.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar bg-dark">
+      <h1 class="outingzm lead"><a href="index.html">OutingZM</a></h1>
+      <ul>
+        <li>
+          <a href="dashboard.html">
+            <i class="fas fa-id-card"></i>
+            <span class="hide-sm"> Dashboard</span>
+          </a>
+        </li>
+        <li><a class="mini" href="promos.html">Promos</a></li>
+        <li>
+          <a href="login.html">
+            <i class="fas fa-sign-out-alt"></i>
+            <span class="hide-sm"> Logout</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="container">
+      <h1 class="large text-primary">Dashboard</h1>
+
+      <p class="lead"><i class="fas fa-user">Hello</i></p>
+      <div class="dash-buttons">
+        <a href="create-profile.html" class="btn my-1"
+          ><i class="fas fa-pen-square text-primary"></i>
+          Edit Business Profile
+        </a>
+        <a href="add-product.html" class="btn my-1"
+          ><i class="fas fa-plus-square text-primary"></i>
+          Add Products
+        </a>
+        <a href="Working-hours.html" class="btn my-1"
+          ><i class="fas fa-clock text-primary"></i>
+          Edit Working Hours
+        </a>
+        <a href="create-promo.html" class="btn my-1"
+          ><i class="fas fa-bullhorn text-primary"></i>
+          Create a Promo / Ad
+        </a>
+        <a href="business.html" class="btn my-1"
+          ><i class="fas fa-address-card text-primary"></i>
+          View Business Profile
+        </a>
+        <div class="leave-testimonial">
+          <p class="mini text-primary">What do you think about this website?</p>
+          <a href="add-testimonial.html" class="btn my-1"
+            ><i class="fas fa-comment text-primary"></i>
+            Let us know
+          </a>
+        </div>
+      </div>
+
+      <h2 class="my-2">Your personal details</h2>
+      <!-- Details -->
+      <div class="line"></div>
+
+      <h2 class="my-2">Active Promos</h2>
+      <div class="promo bg-light">
+        <div class="promo-img">
+          <img
+            class="promo-image"
+            src="/dist/images/promos/image1.jpg"
+            alt="promo image"
+          />
+        </div>
+        <div class="promo-details">
+          <p class="promo-title lead">
+            Amazing offers this holiday!<span>Ad</span>
+          </p>
+          <p class="promo-text mini">
+            Amazingly amazing holiday offers... book a room for one night and
+            come back the get a free weekend saty for two... hurry!
+          </p>
+          <a class="mini promo-link" href="#">Get offer</a>
+        </div>
+      </div>
+      <div class="line"></div>
+
+      <h2 class="my-2">Your Showcase</h2>
+      <div class="showcase bg-white">
+        <div class="showcase-img">
+          <img
+            class="showcase-image"
+            id="img_1"
+            src="/dist/images/showcase/meeting.jpg"
+            alt="product image"
+            onclick="enlarge(id='img_1')"
+          /><button class="btn btn-danger mini">
+            x
+          </button>
+        </div>
+        <div class="showcase-img">
+          <img
+            class="showcase-image"
+            id="img_2"
+            src="/dist/images/showcase/coffee.jpg"
+            alt="product image"
+            onclick="enlarge(id='img_2')"
+          /><button class="btn btn-danger mini">
+            x
+          </button>
+        </div>
+        <div class="showcase-img">
+          <img
+            class="showcase-image"
+            id="img_3"
+            src="/dist/images/showcase/tables.jpg"
+            alt="product image"
+            onclick="enlarge(id='img_3')"
+          /><button class="btn btn-danger mini">
+            x
+          </button>
+        </div>
+        <div class="showcase-img">
+          <img
+            class="showcase-image"
+            id="img_4"
+            src="/dist/images/showcase/hallway.jpg"
+            alt="product image"
+            onclick="enlarge(id='img_4')"
+          /><button class="btn btn-danger ">
+            X
+          </button>
+        </div>
+        <div class="showcase-img">
+          <img
+            class="showcase-image"
+            id="img_2"
+            src="/dist/images/showcase/coffee.jpg"
+            alt="product image"
+            onclick="enlarge(id='img_2')"
+          /><button class="btn btn-danger mini">
+            x
+          </button>
+        </div>
+        <div class="showcase-img">
+          <img
+            class="showcase-image"
+            id="img_3"
+            src="/dist/images/showcase/tables.jpg"
+            alt="product image"
+            onclick="enlarge(id='img_3')"
+          /><button class="btn btn-danger mini">
+            x
+          </button>
+        </div>
+        <div class="showcase-img">
+          <img
+            class="showcase-image"
+            id="img_4"
+            src="/dist/images/showcase/hallway.jpg"
+            alt="product image"
+            onclick="enlarge(id='img_4')"
+          /><button class="btn btn-danger mini">
+            x
+          </button>
+        </div>
+      </div>
+      <form class="form" enctype="multipart/form-data">
+        <div class="form-group">
+          <small>Add an image</small>
+          <input type="file" name="image" id="prod-image" class="btn" />
+          <button class="btn" type="submit">Submit</button>
+        </div>
+      </form>
+      <div class="line"></div>
+      <div class="my-2">
+        <button class="btn btn-danger">
+          <i class="fas fa-trash-alt"></i> Delete Profile
+        </button>
+        <button class="btn btn-danger">
+          <i class="fas fa-user-times"></i> Delete Account & Profile
+        </button>
+      </div>
+    </section>
+  </body>
+</html>
