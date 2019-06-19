@@ -247,4 +247,29 @@
       text-align: center
     }
   }
+
+  .add-to-showcase {
+    display: flex;
+    flex-direction: column;
+
+    input {
+      margin-bottom: .5rem
+    }
+
+    button {
+      width: 5rem;
+      align-self: center
+    }
+  }
+
+  .delete-stuff {
+    display: flex;
+    flex-direction: column;
+
+    .btn {
+      margin-bottom: .2rem;
+      width: 80%;
+      align-self: center
+    }
+  }
 }
