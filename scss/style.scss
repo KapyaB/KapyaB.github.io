@@ -178,12 +178,7 @@ img {
       align-self: center;
 
       // margin: 0.5rem;
-      &:hover {
-        transform: scale(2);
-        margin-left: 50%;
 
-        transition: all 1s;
-      }
     }
   }
 
@@ -296,24 +291,6 @@ img {
   padding: 1rem;
   line-height: 1.8;
   margin-bottom: 1rem;
-}
-
-.product {
-  height: auto;
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-
-  &-img {
-    display: flex;
-    justify-content: center;
-  }
-
-  &-image {
-    width: auto;
-    max-width: 100%;
-    justify-self: center;
-
-  }
 }
 
 // Business page

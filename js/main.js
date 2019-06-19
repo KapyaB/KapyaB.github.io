@@ -21,8 +21,9 @@ function closeModal() {
 
 // enlarge showcase image
 function enlarge(id) {
-  const image = document.getElementById(`${id}`);
-  image.classList.toggle("enlarged");
+  const image = document.getElementById(`${id}`).getAttribute("src");
+  console.log(image);
+  window.open(image.toString(), "_blank");
   // image.style.maxHeight = "80%";
 }
 

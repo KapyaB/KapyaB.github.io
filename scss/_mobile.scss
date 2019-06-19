@@ -70,13 +70,6 @@
       width: auto;
       max-width: 100%;
       justify-self: center;
-
-      &:hover {
-        transform: scale(0);
-        margin-left: 0;
-
-        transition: all 1s;
-      }
     }
 
     a,
@@ -205,43 +198,43 @@
         }
       }
     }
+  }
 
-    // scrollbar
-    &::-webkit-scrollbar {
-      width: 0.5rem;
-    }
+  // scrollbar
+  &::-webkit-scrollbar {
+    width: 0.5rem;
+  }
 
-    &::-webkit-scrollbar-track {
-      box-shadow: inset 0 0 5px #333;
-      border-radius: 0.5rem;
-    }
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #333;
+    border-radius: 0.5rem;
+  }
 
-    /* Handle */
-    &::-webkit-scrollbar-thumb {
-      background: $primary-color;
-      border-radius: 0.5rem;
-    }
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: $primary-color;
+    border-radius: 0.5rem;
+  }
 
-    /* Handle on hover */
-    &::-webkit-scrollbar-thumb:hover {
-      background: darken($primary-color, 10%);
-    }
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: darken($primary-color, 10%);
+  }
 
-    /* The Close Button */
-    .close {
-      color: #fff;
-      font-size: 0.75rem;
-      float: right;
-      margin-right: 2rem;
-      margin-bottom: 2rem;
-    }
+  /* The Close Button */
+  .close {
+    color: #fff;
+    font-size: 0.75rem;
+    float: right;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+  }
 
-    .close:hover,
-    .close:focus {
-      color: #000;
-      text-decoration: none;
-      cursor: pointer;
-    }
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
   }
 
   .business-about {
