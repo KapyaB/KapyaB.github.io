@@ -298,9 +298,22 @@ img {
   margin-bottom: 1rem;
 }
 
-.products {
-  padding: 0 1rem;
-  margin: 0.5rem 10%;
+.product {
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+
+  &-img {
+    display: flex;
+    justify-content: center;
+  }
+
+  &-image {
+    width: auto;
+    max-width: 100%;
+    justify-self: center;
+
+  }
 }
 
 // Business page
@@ -343,6 +356,20 @@ img {
 
   .product {
     height: auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+
+    &-img {
+      display: flex;
+      justify-content: center;
+    }
+
+    &-image {
+      width: auto;
+      max-width: 100%;
+      justify-self: center;
+
+    }
   }
 
   // scrollbar
@@ -616,4 +643,4 @@ h4 {
   }
 }
 
-@import 'mobile'
+@import 'mobile';

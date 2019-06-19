@@ -59,14 +59,24 @@
 
   // landing
 
-  .promo {
+  .promo,
+  .product {
+    display: grid;
     grid-template-columns: 1fr;
     height: 60%;
 
-    .promo-image {
+    .promo-image,
+    .product-image {
       width: auto;
       max-width: 100%;
       justify-self: center;
+
+      &:hover {
+        transform: scale(0);
+        margin-left: 0;
+
+        transition: all 1s;
+      }
     }
 
     a,
@@ -74,6 +84,15 @@
       padding: 0.3rem 0.4rem
     }
   }
+
+  span {
+    font-size: .5rem;
+    width: fit-content;
+    display: inline-block;
+    margin: .25rem;
+    vertical-align: super;
+  }
+
 
   .working-hours {
     grid-template-columns: 1fr;
@@ -111,8 +130,21 @@
   }
 
   .product {
-    grid-template-columns: 1fr
+    grid-template-columns: 1fr;
+
+    &-img {
+      display: flex;
+      justify-content: center;
+
+      &-image {
+        width: auto;
+        max-width: 100%;
+        justify-self: center;
+      }
+    }
   }
+
+
 
   // create promo
   .duration-container {
@@ -143,6 +175,83 @@
 
     img {
       justify-self: center
+    }
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: .5rem;
+    left: 10%;
+    top: 10%;
+    width: 80%;
+    height: 80%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 2px solid $primary-color;
+
+    .product {
+      grid-template-columns: 1fr;
+
+      &-img {
+        display: flex;
+        justify-content: center;
+
+        &-image {
+          width: auto;
+          max-width: 100%;
+          justify-self: center;
+        }
+      }
+    }
+
+    // scrollbar
+    &::-webkit-scrollbar {
+      width: 0.5rem;
+    }
+
+    &::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px #333;
+      border-radius: 0.5rem;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: $primary-color;
+      border-radius: 0.5rem;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: darken($primary-color, 10%);
+    }
+
+    /* The Close Button */
+    .close {
+      color: #fff;
+      font-size: 0.75rem;
+      float: right;
+      margin-right: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+
+  .business-about {
+    text-align: center;
+
+    .services {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center
     }
   }
 }
