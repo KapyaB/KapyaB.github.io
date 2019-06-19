@@ -86,12 +86,6 @@
     vertical-align: super;
   }
 
-
-  .working-hours {
-    grid-template-columns: 1fr;
-    width: 100%
-  }
-
   .testimonials {
     overflow: auto;
     flex-direction: column;
@@ -271,5 +265,16 @@
       width: 80%;
       align-self: center
     }
+  }
+
+  .form {
+
+    .working-hours {
+      width: 100%
+    }
+  }
+
+  .stars {
+    display: flex
   }
 }
